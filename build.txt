@@ -1,5 +1,5 @@
 displayName = Flight Time Timer
 author = GoodPro712
-version = 1.2
+version = 1.2.1
 side = client
 homepage = https://forums.terraria.org/index.php?threads/flight-time-timer.85190/
