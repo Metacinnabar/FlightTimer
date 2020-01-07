@@ -1,10 +1,12 @@
 # FlightTimer
-Flight Left Timer is a mod that counts the amount of flight time you have left. The amount left will be drawn by default in the center of the screen, however, you are able to change its position via mod config.
-This mod gives you a quick config meaning if you want it turned off, it goes off instantly via the mod config.
+Flight Left Timer is a mod that counts the amount of flight time you have left. 
+The amount left will be drawn by default in the center of the screen, however, you are able to change its position via mod config. 
+You are also able to instantly disable it via the mod config. This mod is client-sided.
 No number will be displayed when you are not flying.
 
 This mod was requested by Crimsoneye495, and coded by GoodPro712
 
+Github: https://github.com/GoodPro712/FlightTimer
 Forum: https://forums.terraria.org/index.php?threads/flight-time-timer.85190/
 Discord: https://discord.gg/VrxSx4B
 
