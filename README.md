@@ -1,5 +1,5 @@
 # FlightTimer
-Flight Time Timer is a mod the counts the amount of flight time you have left. The amount left will be drawn on screen, to the left of the player. 
+Flight Left Timer is a mod that counts the amount of flight time you have left. The amount left will be drawn on screen, to the left of the player. 
 This nmod gives you a quick config meaning if you want it turned off, it goes off instantly. 
 No number will be displayed when you are not flying.
 
