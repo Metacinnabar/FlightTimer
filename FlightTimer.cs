@@ -1,16 +1,16 @@
-using System.Collections.Generic;
-using Terraria.ModLoader;
-using Terraria.UI;
-using Terraria;
 using Microsoft.Xna.Framework;
-using Terraria.ModLoader.Config;
+using System.Collections.Generic;
 using System.ComponentModel;
+using Terraria;
+using Terraria.ModLoader;
+using Terraria.ModLoader.Config;
+using Terraria.UI;
 
 namespace FlightTimer
 {
 	public class FlightTimer : Mod
 	{
-		//Make forum
+		//layers.NewInterfaceLayer
 
 		public override void ModifyInterfaceLayers(List<GameInterfaceLayer> layers)
 		{
@@ -32,7 +32,7 @@ namespace FlightTimer
 			}
 		}
 	}
-	 
+
 	public class Config : ModConfig
 	{
 		public override ConfigScope Mode => ConfigScope.ClientSide;
@@ -40,7 +40,7 @@ namespace FlightTimer
 		[Header("Flight")]
 
 		[Label("Flight Timer")]
-		[Tooltip("Adds a timer nexxt to the player to show how much wing time is left. False for no timer, true to for timer. True by default")]
+		[Tooltip("Adds a timer next to the player to show how much wing time is left. False for no timer, true for timer. True by default")]
 		[DefaultValue(true)]
 		public bool FlightTimer;
 
@@ -53,7 +53,7 @@ namespace FlightTimer
 		public int Decimal;
 
 		[Label("Flight Time Timer Position")]
-		[Tooltip("Adds a timer nexxt to the player to show how much wing time is left. False for no timer, true to for timer. True by default")]
+		[Tooltip("The position of the flight time timer. Default center of screen.")]
 		[DefaultValue(typeof(Vector2), "0.5, 0.5")]
 		public Vector2 Position;
 	}
