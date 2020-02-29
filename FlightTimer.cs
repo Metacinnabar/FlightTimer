@@ -1,17 +1,14 @@
 using Microsoft.Xna.Framework;
 using System.Collections.Generic;
-using System.ComponentModel;
 using Terraria;
 using Terraria.ModLoader;
-using Terraria.ModLoader.Config;
 using Terraria.UI;
 
 namespace FlightTimer
 {
 	public class FlightTimer : Mod
 	{
-		//layers.NewInterfaceLayer
-
+		// GoodProLib v1.0 - layers.NewInterfaceLayer
 		public override void ModifyInterfaceLayers(List<GameInterfaceLayer> layers)
 		{
 			int mouseText = layers.FindIndex(layer => layer.Name.Equals("Vanilla: Mouse Text"));
@@ -27,34 +24,10 @@ namespace FlightTimer
 
 						Utils.DrawBorderString(Main.spriteBatch, text, position, Color.WhiteSmoke);
 					}
+
 					return true;
 				}, InterfaceScaleType.UI));
 			}
 		}
-	}
-
-	public class Config : ModConfig
-	{
-		public override ConfigScope Mode => ConfigScope.ClientSide;
-
-		[Header("Flight")]
-
-		[Label("Flight Timer")]
-		[Tooltip("Adds a timer next to the player to show how much wing time is left. False for no timer, true for timer. True by default")]
-		[DefaultValue(true)]
-		public bool FlightTimer;
-
-		[Label("Flight Time Timer Decimal")]
-		[Tooltip("The amount of decimals to show on the flight time timer. Default 1")]
-		[DrawTicks]
-		[Range(0, 2)]
-		[Increment(1)]
-		[DefaultValue(1)]
-		public int Decimal;
-
-		[Label("Flight Time Timer Position")]
-		[Tooltip("The position of the flight time timer. Default center of screen.")]
-		[DefaultValue(typeof(Vector2), "0.5, 0.5")]
-		public Vector2 Position;
 	}
 }
